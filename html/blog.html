@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <title>株式会社TECH</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <a href="index.html" class="header_title">TECH</a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="header-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="header-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="header-nav-item"><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+    
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="blog.html">社員ブログ</a></li>
+        <li><a href="company_detail.html">会社概要</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="blog">
+      <div class="blog-header">社員ブログ</div>
+    
+
+      <div class="blog-container">
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2019/07/17</div>
+          <div class="blog-group-title">会社を創業した理由</div>
+        </a>
+
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2019/11/11</div>
+          <div class="blog-group-title">ITエンジニアを育成する最強メソッド</div>
+        </a>
+
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2020/08/01</div>
+          <div class="blog-group-title">コーチングによるモチベーション向上理論</div>
+        </a>
+
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2020/09/10</div>
+          <div class="blog-group-title">プログラミング言語習得論</div>
+        </a>
+
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2020/12/01</div>
+          <div class="blog-group-title">エンジニア採用における注意点</div>
+        </a>
+
+        <a href="#" class="blog-group">
+          <img src="../img/blog.png" alt="blog.png" class="blog-group-img">
+          <div class="blog-group-date">2021/01/01</div>
+          <div class="blog-group-title">今年の抱負</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- inquiry -->
+    <div class="inquiry">
+      <h2 class="inquiry-title">お問い合わせ</h2>
+      <div class="inquiry-text">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</div>
+      <input type="button" value="お問い合わせ" class="inquiry-button" id="openBtn">
+    </div>
+  </main>
+
+  <button class="scroll-top" id="button">↑</button>
+
+  <!-- footer -->
+  <footer>
+    <small>© 2020 TECH inc.</small>
+    <nav class="footer_nav">
+      <ul class="footer_nav-list">
+        <li class="footer_nav-item">
+          <a href="" class="footer_nav-a">ホーム</a>
+        </li>
+        <li class="footer_nav-item">
+          <a href="" class="footer_nav-a">事業内容</a>
+        </li>
+        <li class="footer_nav-item">
+          <a href="" class="footer_nav-a">社員ブログ</a>
+        </li>
+        <li class="footer_nav-item">
+          <a href="" class="footer_nav-a">会社概要</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- お問い合わせフォーム -->
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__content-inner">
+        <div class="modal-form-closeBtn-content">
+          <input type="button" value="×" class="modal-form-closeBtn-item" id="closeBtn">
+        </div>
+        <div class="modal-form-title">お問い合わせ</div>
+        <form class="modal-form-group">
+          <div class="modal-form-item">
+            <label for="company" class="modal-form-item-label">会社名</label>
+            <input type="text" id="company" class="modal-form-input-text">
+          </div>
+          <div class="modal-form-item">
+            <label for="name" class="modal-form-item-label">お名前</label>
+            <span class="modal-form-span">※</span>
+            <input type="text" id="name" class="modal-form-input-text">
+          </div>
+          <div class="modal-form-item">
+            <label for="email" class="modal-form-item-label">メールアドレス</label>
+            <span class="modal-form-span">※</span>
+            <input type="text" class="modal-form-input-text">
+          </div>
+          <div class="modal-form-item">
+            <label for="comment" class="modal-form-item-label">お問い合わせ内容</label>
+            <span class="modal-form-span">※</span>
+            <textarea id="comment" rows="8" cols="80" class="modal-form-input-textarea"></textarea>
+          </div>
+          <input type="submit" value="お申込み" class="modal-form-button">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
